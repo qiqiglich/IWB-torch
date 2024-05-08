@@ -1,6 +1,8 @@
 # Inverse Weight-Balancing for Deep Long-Tailed Learning(AAAI2024)
 Pytoch version of Inverse Weight-Balancing for Deep Long-Tailed Learning. IWB is a adaptive classifier design method that outperforms previous approaches.[[paper]](https://ojs.aaai.org/index.php/AAAI/article/view/29055)
 
+![Figure1](https://github.com/qiqiglich/IWB-torch/assets/img_1.png)
+
 # Train
 The first stage of training： `python first-stage-training.py`
 
@@ -11,8 +13,9 @@ The second stage of training： `python second-stage-training.py`
 You can get IWB model by this instruction, the model will be store in './exp./stage_2/'.
 
 # Result
-There is an interesting phenomenon that the weight-norms distribution of the classifier is consistent with the logarithmic
+There is an interesting phenomenon that the weight-norms distribution of the classifier is consistent with the logarithmic
 distribution of the number of samples, as shown in this Figure.
+![Figure2](https://github.com/qiqiglich/IWB-torch/assets/img_2.png)
 
 # Requirements
 This work only need 4*NVIDIA GeForce RTX 2080.
